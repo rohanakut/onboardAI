@@ -16,7 +16,3 @@ def get_file_meta(path):
         "date": c.committed_datetime.isoformat(),
         "sha": c.hexsha
     }
-
-if __name__ == "__main__":
-    example = get_file_meta("django/core/management/base.py")
-    print(example)

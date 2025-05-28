@@ -24,7 +24,6 @@ total_files = len(all_paths)
 out_f = open(constants.CHECKPOINT_FILE, "a", encoding="utf-8")
 
 def something():
-
     try:
         # Wrap in tqdm for a progress bar
         for path in tqdm(all_paths, desc="Ingesting files", unit="file"):
