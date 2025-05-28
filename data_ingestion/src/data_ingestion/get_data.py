@@ -7,8 +7,8 @@ from ingest import list_all_files
 from parse_defs import extract_defs
 from git_meta import get_file_meta
 
-CHECKPOINT_FILE = "ingest_records.jsonl"
-PROGRESS_FILE   = "ingest_progress.json"
+CHECKPOINT_FILE = "../../ingest_records.jsonl"
+PROGRESS_FILE   = "../../ingest_progress.json"
 
 # Load already-processed paths
 if os.path.exists(PROGRESS_FILE):
