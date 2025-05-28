@@ -1,4 +1,4 @@
-from src.data_ingestion.ingest import list_py_files
+from src.data_ingestion.ingest_files import list_py_files
 from data_ingestion.utils.get_class_list import extract_defs
 
 

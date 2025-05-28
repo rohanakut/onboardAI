@@ -1,7 +1,8 @@
 # git_meta.py
 from git import Repo
+from constants import *
 
-repo = Repo("../../django")
+repo = Repo(repo_path)
 
 def get_file_meta(path):
     """Return author and date for the most recent commit touching this file."""
