@@ -1,4 +1,7 @@
-from builder import ASTChunkBuilder
+# from training.chunking.src.ast_parser.builder import ASTChunkBuilder
+import constants as constants
+from loader import Loader
 
 if __name__ == "__main__":
-    ASTChunkBuilder().build()
+    loader = Loader(constants.file_path)
+    loader.load()

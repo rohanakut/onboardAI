@@ -24,5 +24,7 @@ class ASTChunkBuilder:
         3. Return the list of enriched chunks
         """
         raw_chunks = self.splitter.split(source_code, path)
+        # print("Raw chunks:",raw_chunks)
         enriched_chunks = [self.enricher.enrich(chunk, source_code) for chunk in raw_chunks]
+        # print("Enriched chunks:",enriched_chunks)
         return enriched_chunks
